@@ -1,4 +1,5 @@
 `include "environment.sv"
+
 program test(fifo_intf intf);
   environment env;
   
