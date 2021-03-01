@@ -5,10 +5,10 @@
 `include "scoreboard.sv"
 class environment;
   
-  generator gen;
-  driver drv;
-  monitor mon;
-  scoreboard scb;
+  generator gen ;
+  driver drv ;
+  monitor mon ;
+  scoreboard scb ;
   
   mailbox gen2drv;
   mailbox mon2scb;
