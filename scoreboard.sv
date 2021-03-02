@@ -6,16 +6,16 @@ class scoreboard;
  bit wr_ptr;
  bit rd_ptr;
  
- function new(mailbox mon2scb);
-   this.mon2scb = mon2scb;
+ function new(mailbox mon2scb) ;
+   this.mon2scb = mon2scb ;
    foreach(ram[i])begin
-    ram[i] = 8'hff;
+    ram[i] = 8'hff ;
    end
  endfunction 
  
   task main;
    forever begin   
-    transaction trans;
+    transaction trans ;
     #50
     mon2scb.get(trans);
     if(trans.wr_en)begin
